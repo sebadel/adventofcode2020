@@ -27,4 +27,7 @@ I ended up with a wrong answer until I considered that another valid password co
   - Tried to validate in one single if statement but couldn't debug
   - Broke down the vailidation tests in functions and unit tested them. 
   - Careful with range: 5 is not in range(0,5), it is in range(0,6)
+  - Improved my regexp skills - trying to capture groups but doing one single eval.
+  - Discovered a Python 3.8 feature: the walrus operator.
+  
 
