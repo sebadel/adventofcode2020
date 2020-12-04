@@ -9,7 +9,8 @@ def part1(data):
         x = x % len(line)
         if line[x] == '#':
             cnt += 1
-    return cnt                
+    return cnt
+
 
 def part2(data):
     simulations = [
@@ -39,7 +40,7 @@ def _part2(data, right_step, down_step):
 
 
 def main():
-    data = [l.strip() for l in open('input.txt', 'r').readlines()]
+    data = [line.strip() for line in open('input.txt', 'r').readlines()]
     print('Part 1: %d' % part1(data))
     print('Part 2: %d' % part2(data))
 

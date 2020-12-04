@@ -26,11 +26,11 @@ def part2(data: List[int], target: int = 2020):
         a = data.pop()
         print(a)
         pair = find_pair(data, target - a)
-        if pair:        
+        if pair:
             print('%d * %d * %d = %d' % (
                 a, pair[0], pair[1], a*pair[0]*pair[1]))
             return True
-            
+
 
 def main():
     data = open('input.txt', 'r').readlines()
@@ -39,5 +39,6 @@ def main():
     data = open('input.txt', 'r').readlines()
     data = [int(x) for x in data]
     part2(data)
+
 
 main()

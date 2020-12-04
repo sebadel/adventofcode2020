@@ -19,5 +19,6 @@ class TestPart2(unittest.TestCase):
         self.assertFalse(day04.check_hcl('#1234567'))
         self.assertFalse(day04.check_hcl('#a234567'))
 
+
 if __name__ == '__main__':
     unittest.main()

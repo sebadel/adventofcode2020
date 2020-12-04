@@ -15,13 +15,14 @@ def part1(data):
     ecl (Eye Color)
     pid (Passport ID)
     cid (Country ID)
-    """     
+    """
     passport = {}
     count = 0
-    fields = set(['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']) #, 'cid']
+    fields = set(['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid'])  # , 'cid']
     for line in data:
         if not line:
-            if fields.issubset(set(passport.keys())): count += 1                 
+            if fields.issubset(set(passport.keys())):
+                count += 1
             passport = {}
         else:
             for pair in line.split(' '):
@@ -40,11 +41,11 @@ def part2(data):
     """
     passport = {}
     count = 0
-    fields = set(['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid']) #, 'cid']
+    fields = set(['byr', 'iyr', 'eyr', 'hgt', 'hcl', 'ecl', 'pid'])  # , 'cid']
     for line in data:
         if not line:  # Check passport validity
             if (
-                fields.issubset(set(passport.keys())) and                 
+                fields.issubset(set(passport.keys())) and
                 int(passport['byr']) in range(1920, 2003) and
                 int(passport['iyr']) in range(2010, 2021) and
                 int(passport['eyr']) in range(2020, 2031) and
@@ -74,11 +75,11 @@ def check_size(size):
     m = RE_SIZE.match(size)
     return (
         m and (
-            (m.groups()[1] == 'cm' and int(m.groups()[0]) in range(150, 294)) or
-            (m.groups()[1] == 'in' and int(m.groups()[0]) in range(59, 77))
+            (m.groups()[1] == 'cm' and int(m.groups()[0]) in range(150, 294))
+            or (m.groups()[1] == 'in' and int(m.groups()[0]) in range(59, 77))
         )
     )
- 
+
 
 def check_hcl(s):
     """
@@ -95,7 +96,7 @@ def check_ecl(s):
 
 
 def main():
-    data = [l.strip() for l in open('input.txt', 'r').readlines()]
+    data = [line.strip() for line in open('input.txt', 'r').readlines()]
     print('Part 1: %d' % part1(data))
     print('Part 2: %d' % part2(data))
 
