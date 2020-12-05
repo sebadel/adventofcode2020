@@ -16,18 +16,24 @@ I ended up with a wrong answer until I considered that another valid password co
  - Wasted time because I failed to strip the input data :(
 
 ### Part 2
- - Learned math.prod is only available in Python >= 3.8
- - Forgot to start parsing the input from line == down_step. data[down_step:0] instead of data[1:]
+ - Learned math.prod is only available in Python >= 3.8.
+ - Forgot to start parsing the input from line == down_step. data[down_step:0] instead of data[1:].
 
 ## Day 04: Passport validation
 ### Part 1
  - Did not process the last passport because it was triggered by empty lines; first answer submission was short by 1 :(
 
  ### Part 2
-  - Tried to validate in one single if statement but couldn't debug
+  - Tried to validate in one single if statement but couldn't debug.
   - Broke down the vailidation tests in functions and unit tested them. 
-  - Careful with range: 5 is not in range(0,5), it is in range(0,6)
+  - Careful with range: 5 is not in range(0,5), it is in range(0,6).
   - Improved my regexp skills - trying to capture groups but doing one single eval.
   - Discovered a Python 3.8 feature: the walrus operator.
-  
 
+## Day 05: Finding a seat on the plane
+### Part 1
+ - I didn't realize directly the analogy with binary representation.
+
+### Part 2
+ - Lost time trying to optimize with lambda or itertools.
+ - I still believe there must be an elegant set comparison that can compare "neighbor" seats.
