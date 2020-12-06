@@ -37,3 +37,14 @@ I ended up with a wrong answer until I considered that another valid password co
 ### Part 2
  - Lost time trying to optimize with lambda or itertools.
  - I still believe there must be an elegant set comparison that can compare "neighbor" seats.
+
+## Day 06: Passenger customs form
+### Part 1
+ - Need to find a better way to turn a str to a set of chars.
+
+### Part 2
+ - Need to find a better way to initialize the set at first line of the group.
+
+
+
+
