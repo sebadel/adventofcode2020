@@ -45,6 +45,13 @@ I ended up with a wrong answer until I considered that another valid password co
 ### Part 2
  - Need to find a better way to initialize the set at first line of the group.
 
+## Day 07: Luggage check
+### Part 1
+ - I was wondering when recusrsion was going to start ?
+
+### Part 2
+ - I shouldn't have assumed that 'gold' was a sufficient filter, 'shiny gold' was necessary since other types of gold were in the list of colors.
+
 
 
 
