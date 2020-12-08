@@ -53,5 +53,13 @@ I ended up with a wrong answer until I considered that another valid password co
  - I shouldn't have assumed that 'gold' was a sufficient filter, 'shiny gold' was necessary since other types of gold were in the list of colors.
 
 
+## Day 08: Handheld instruction set
+### Part 1
+ - Got bitten by empty lines at the end of the input file.
+
+### Part 2
+ - Found an iterative way to get to the solution.
+ - Can't find a working recursive methodology :(
+
 
 
