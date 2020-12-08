@@ -61,5 +61,6 @@ I ended up with a wrong answer until I considered that another valid password co
  - Found an iterative way to get to the solution.
  - Can't find a working recursive methodology :(
 
-
+### Part 2b
+  - I really wanted to improve the solution with a recursive function; I couldn't do it without deep copying the instruction set - which is probably not very efficient.
 
