@@ -64,3 +64,9 @@ I ended up with a wrong answer until I considered that another valid password co
 ### Part 2b
   - I really wanted to improve the solution with a recursive function; I couldn't do it without deep copying the instruction set - which is probably not very efficient.
 
+## Day 09: Protocol decryption
+### Part 1
+ - Had to isolate pair in a function - wish I could do without the nested loop.
+
+### Part 2
+ - too many off-by-one notations but works OK. 

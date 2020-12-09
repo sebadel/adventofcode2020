@@ -2,7 +2,7 @@
 
 
 def pairs(data, cursor):
-    """Returns sum of 24 previous numbers."""
+    """Returns sum of 25 previous numbers."""
     p = []
     for i in data[cursor-25:cursor]:
         for j in data[cursor-25:cursor]:
