@@ -70,3 +70,35 @@ I ended up with a wrong answer until I considered that another valid password co
 
 ### Part 2
  - too many off-by-one notations but works OK. 
+
+## Day 10: Adapter mess
+### Part 1
+ - Not elegant but not complex.
+ - Took a little while to figure out what the problem exactly was.
+ - Found out it only takes one unknown word (jolt) to make a problem much harder to grasp.
+
+### Part 2 
+- I won't lie, I suffered ... but the satisfaction is proportional
+- The testing of the puzzle use case was succesful but the solving of my input took hours to execute ... 
+- First you think it might take a few mins so my_lazy_and_confident_self is satisfied and just keeps an eye on the laptop
+So here is what my morning was like:
+Tested the part2 on the demo input, yeah, it works, run it with the real puzzle input ... hmmm, slower, but my_lazy_and_super_confident_self knows it is a matter of seconds or maybe even a few minutes...
+- hmmm, still no output, let's go shower quickly, 
+- hmmm, still no ouput, let's wake up the wife, 
+- hmmm, still no output ... but 3% battery, run to find your laptop adapter, 
+- hmmm, still no output ... prepare breakfast for the kids
+- hmmm, still no output ... take the kids to school ... but don't ask me to smile
+- really, 2 hours and still no output ... maybe I could start working on a more efficient solution ... 
+- OK, time's up, it will be for tonight, let's get to work
+- Oh, but wait, maybe ... I think ... if I did this ... it should ... let's try ... failed ... back to work for 10 min
+- repeat until noon until it finally beautifully workedexecuted in 0.02sec
+
+
+
+
+# Interesting links
+## Utility from salt-die
+https://github.com/salt-die/Advent-of-Code/blob/master/2020/aoc_helper
+ - automated download of input
+ - automated submission
+ - automated template-based per-day directory creation
