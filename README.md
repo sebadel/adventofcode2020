@@ -91,7 +91,7 @@ Tested the part2 on the demo input, yeah, it works, run it with the real puzzle 
 - really, 2 hours and still no output ... maybe I could start working on a more efficient solution ... 
 - OK, time's up, it will be for tonight, let's get to work
 - Oh, but wait, maybe ... I think ... if I did this ... it should ... let's try ... failed ... back to work for 10 min
-- repeat until noon until it finally beautifully workedexecuted in 0.02sec
+- repeat until noon until it finally beautifully executed in 0.02sec
 
 
 
