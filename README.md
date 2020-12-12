@@ -93,8 +93,13 @@ Tested the part2 on the demo input, yeah, it works, run it with the real puzzle 
 - Oh, but wait, maybe ... I think ... if I did this ... it should ... let's try ... failed ... back to work for 10 min
 - repeat until noon until it finally beautifully executed in 0.02sec
 
+## Day 11: Seat allocation
+No particular comment, just couldn't find time to finish it
+in the morning.
 
-
+## Day 12: Seat allocation
+### Part2
+Not fully satisfied with the direction shifting, there probably are more arithmetic ways to store waypoint and position coordinates. 
 
 # Interesting links
 ## Utility from salt-die
