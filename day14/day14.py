@@ -7,7 +7,7 @@ def part1(data):
     memory = {}
     for line in data:
         op, value = line.split(' = ')
-        if op == 'mask': 
+        if op == 'mask':
             mask = value
         else:
             address = int(re.search(r'mem\[(\d+)\]', op).groups()[0])
@@ -34,7 +34,7 @@ def part2(data):
     memory = {}
     for line in data:
         op, value = line.split(' = ')
-        if op == 'mask': 
+        if op == 'mask':
             mask = list(value)
         else:
             address = int(re.search(r'mem\[(\d+)\]', op).groups()[0])
