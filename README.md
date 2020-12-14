@@ -101,6 +101,18 @@ in the morning.
 ### Part2
 Not fully satisfied with the direction shifting, there probably are more arithmetic ways to store waypoint and position coordinates. 
 
+## Day 13: Bus schedules
+### Part1
+- No particular difficulty
+
+### Part2
+- I struggled hard - after multiple hours of not finding, I finally went to subreddit and used a solution for inspiration
+- My solution actually worked but way too slow - I kept on bruteforcing with a constant increase (equal to max(buses). 
+- The main limitation was that I could not find how to increase the step.
+- It turned out the right way is to compare 2 buses, then go to the next one by multiplying the increase by the value of the new bus.
+- Another hint was to ignore the 'x' values by replacing them with 0 instead of keeping a dict with {offset: bus}.
+- Interesting read about the Chinese Remainder Theory (https://en.wikipedia.org/wiki/Chinese_remainder_theorem).
+
 # Interesting links
 ## Utility from salt-die
 https://github.com/salt-die/Advent-of-Code/blob/master/2020/aoc_helper
