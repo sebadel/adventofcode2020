@@ -113,6 +113,25 @@ Not fully satisfied with the direction shifting, there probably are more arithme
 - Another hint was to ignore the 'x' values by replacing them with 0 instead of keeping a dict with {offset: bus}.
 - Interesting read about the Chinese Remainder Theory (https://en.wikipedia.org/wiki/Chinese_remainder_theorem).
 
+# Day 14: Docking data and bitwise operations
+## Part 1:
+ - Refreshing reminder about bitwise operations.
+
+## Part 2:
+ - Nothing particular
+
+# Day 15: Memory game with the elves
+## Part 1:
+ - No particular difficulty
+
+## Part2:
+ - Took ~1.5h to reach acceptable performance (execution time: 57sec).
+ - Interesting to notice that removing the counter (n 'if' statement) didn't reduce the execution speed.
+ - Trimmed 2 secs by using IndexErrors instead of testing index validity: ~55sec.
+ - Trimmed 2 secs by using Python 3.6.8 instead of Python 2.7.16. 
+ - No impact when using a list instead of a dict to hold the numbers.
+ - ~39sec using a Memory class (day15b.py)
+
 # Interesting links
 ## Utility from salt-die
 https://github.com/salt-die/Advent-of-Code/blob/master/2020/aoc_helper

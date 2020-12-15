@@ -3,10 +3,13 @@
 import re
 
 
+RE_PARSE_RULE = re.compile(r'(.*)\s+contain\s+(.*?)\.')
+RE_GET_QTY_BAGS = re.compile(r'^(\d+)\s')
+
 def rule_parser(rule):
     """Returns Tuple[str, List[str]]."""
-    rule = re.sub(r'\sbags?', '', re.sub(r'\.', '', rule))
-    bag, contents = rule.split(' contain ')
+    rule = re.sub(r'\sbags?', '', rule)
+    bag, contents = RE_PARSE_RULE.search(rule).groups()
     contents = contents.split(', ')
     return (bag, contents)
 
@@ -14,10 +17,9 @@ def rule_parser(rule):
 def can_contain(colors, rules):
     bags = set()
     for parent, content in rules:
-        for c in content:
-            for color in colors:
-                if color in c:
-                    bags.add(parent)
+        content = set([RE_GET_QTY_BAGS.sub('', c) for c in content])
+        if content.intersection(set(colors)):
+            bags.add(parent)
     if bags:
         bags.update(can_contain(bags, rules))
     return bags
@@ -28,7 +30,7 @@ def what_is_in(color, rules):
     for parent, content in rules:
         if parent in color:
             for c in content:
-                m = re.search(r'^(\d+)\s', c)
+                m = RE_GET_QTY_BAGS.match(c)
                 if m:
                     n = int(m.groups()[0])
                     total = total + (n * what_is_in(c, rules))
@@ -42,7 +44,7 @@ def part1(data):
 
 
 def part2(data):
-    """How many are in the shiny gold bag ?"""
+    """How many are in the shiny gold bag?"""
     total = what_is_in('shiny gold', data)
     return total-1
 
