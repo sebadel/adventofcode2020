@@ -6,6 +6,7 @@ import re
 RE_PARSE_RULE = re.compile(r'(.*)\s+contain\s+(.*?)\.')
 RE_GET_QTY_BAGS = re.compile(r'^(\d+)\s')
 
+
 def rule_parser(rule):
     """Returns Tuple[str, List[str]]."""
     rule = re.sub(r'\sbags?', '', rule)

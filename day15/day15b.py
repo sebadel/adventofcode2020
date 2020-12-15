@@ -16,10 +16,10 @@ def part2(data, n):
     start = datetime.datetime.now()
     while turn <= max_turns:
         occ = memory.occurred_at_least_twice(x)
-        if not occ:  # Occurred before but only once.
-            x = 0
-        else:  # Never occurred before or occurred multiple times
+        if occ:  # occurred at least twice
             x = occ[1] - occ[0]
+        else:  # Didn't occur at least twice.
+            x = 0
         memory.record(x, turn)
         turn += 1
         # Optional counter - probably slows down the process a little bit.
