@@ -25,7 +25,7 @@ I ended up with a wrong answer until I considered that another valid password co
 
  ### Part 2
   - Tried to validate in one single if statement but couldn't debug.
-  - Broke down the vailidation tests in functions and unit tested them. 
+  - Broke down the vailidation tests in functions and unit tested them.
   - Careful with range: 5 is not in range(0,5), it is in range(0,6).
   - Improved my regexp skills - trying to capture groups but doing one single eval.
   - Discovered a Python 3.8 feature: the walrus operator.
@@ -69,7 +69,7 @@ I ended up with a wrong answer until I considered that another valid password co
  - Had to isolate pair in a function - wish I could do without the nested loop.
 
 ### Part 2
- - too many off-by-one notations but works OK. 
+ - too many off-by-one notations but works OK.
 
 ## Day 10: Adapter mess
 ### Part 1
@@ -77,18 +77,18 @@ I ended up with a wrong answer until I considered that another valid password co
  - Took a little while to figure out what the problem exactly was.
  - Found out it only takes one unknown word (jolt) to make a problem much harder to grasp.
 
-### Part 2 
+### Part 2
 - I won't lie, I suffered ... but the satisfaction is proportional
-- The testing of the puzzle use case was succesful but the solving of my input took hours to execute ... 
+- The testing of the puzzle use case was succesful but the solving of my input took hours to execute ...
 - First you think it might take a few mins so my_lazy_and_confident_self is satisfied and just keeps an eye on the laptop
 So here is what my morning was like:
 Tested the part2 on the demo input, yeah, it works, run it with the real puzzle input ... hmmm, slower, but my_lazy_and_super_confident_self knows it is a matter of seconds or maybe even a few minutes...
-- hmmm, still no output, let's go shower quickly, 
-- hmmm, still no ouput, let's wake up the wife, 
-- hmmm, still no output ... but 3% battery, run to find your laptop adapter, 
+- hmmm, still no output, let's go shower quickly,
+- hmmm, still no ouput, let's wake up the wife,
+- hmmm, still no output ... but 3% battery, run to find your laptop adapter,
 - hmmm, still no output ... prepare breakfast for the kids
 - hmmm, still no output ... take the kids to school ... but don't ask me to smile
-- really, 2 hours and still no output ... maybe I could start working on a more efficient solution ... 
+- really, 2 hours and still no output ... maybe I could start working on a more efficient solution ...
 - OK, time's up, it will be for tonight, let's get to work
 - Oh, but wait, maybe ... I think ... if I did this ... it should ... let's try ... failed ... back to work for 10 min
 - repeat until noon until it finally beautifully executed in 0.02sec
@@ -99,7 +99,7 @@ in the morning.
 
 ## Day 12: Seat allocation
 ### Part2
-Not fully satisfied with the direction shifting, there probably are more arithmetic ways to store waypoint and position coordinates. 
+Not fully satisfied with the direction shifting, there probably are more arithmetic ways to store waypoint and position coordinates.
 
 ## Day 13: Bus schedules
 ### Part1
@@ -107,7 +107,7 @@ Not fully satisfied with the direction shifting, there probably are more arithme
 
 ### Part2
 - I struggled hard - after multiple hours of not finding, I finally went to subreddit and used a solution for inspiration
-- My solution actually worked but way too slow - I kept on bruteforcing with a constant increase (equal to max(buses). 
+- My solution actually worked but way too slow - I kept on bruteforcing with a constant increase (equal to max(buses).
 - The main limitation was that I could not find how to increase the step.
 - It turned out the right way is to compare 2 buses, then go to the next one by multiplying the increase by the value of the new bus.
 - Another hint was to ignore the 'x' values by replacing them with 0 instead of keeping a dict with {offset: bus}.
@@ -128,9 +128,19 @@ Not fully satisfied with the direction shifting, there probably are more arithme
  - Took ~1.5h to reach acceptable performance (execution time: 57sec).
  - Interesting to notice that removing the counter (n 'if' statement) didn't reduce the execution speed.
  - Trimmed 2 secs by using IndexErrors instead of testing index validity: ~55sec.
- - Trimmed 2 secs by using Python 3.6.8 instead of Python 2.7.16. 
+ - Trimmed 2 secs by using Python 3.6.8 instead of Python 2.7.16.
  - No impact when using a list instead of a dict to hold the numbers.
  - ~39sec using a Memory class (day15b.py)
+
+# Day 16:
+## Part 1:
+ - As usual, pretty straightforward
+
+## Part 2:
+ - Quickly came to the solution but it took a serious amount of troubleshooting to understand a function was
+ returning an int or None if not found; later on, this value was tested with "if value:".
+The side effect of this is that this became False if the function returned an index of 0 :(((
+ - On to day 17 now, personal record broken at this point ;)
 
 # Interesting links
 ## Utility from salt-die
