@@ -101,6 +101,7 @@ def part2(data):
 # 399 < x # 424
 # 410 411 not good either
 
+
 def main():
     data = [line.strip() for line in open('input.txt', 'r').readlines()]
     print('Part 1: %s' % part1(data))
