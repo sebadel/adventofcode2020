@@ -142,6 +142,47 @@ Not fully satisfied with the direction shifting, there probably are more arithme
 The side effect of this is that this became False if the function returned an index of 0 :(((
  - On to day 17 now, personal record broken at this point ;)
 
+# Day 17:
+## Part 1:
+ - This one took some time to understand the best way to model it.
+
+## Part 2:
+ - Once P1 was done, this one was 8 mins.
+
+# Day 18:
+## Part 1:
+ - Completed on time but needs some refactoring before I share on GitHub
+
+## Part 2:
+ - Completed on time but needs some refactoring before I share on GitHub
+
+# Day 19:
+## Part 1:
+ - Spent more time on Strava than on AoC ;)
+ - Needs to catch up with the backlog
+
+## Part 2:
+ - [2020/12/27] Finally wrapped my head around this one. Got a hint from a friend, and gave up the elegant solution for the bruteforce "capped recursivity" - Not 100% satisfied but moving on ;)
+
+
+# Day 20:
+## Part 1:
+ - Got one silver star for day 20 on day 20
+
+## Part 2:
+ - Overlooked the instruction to remove the border from the tiles :((
+
+# Day 21:
+## Part 1
+  - Haven't opened the problem on day 21.
+  - Hoping to get 19 and 20 finished by tomorrow (22) and get to 21 after tomorrow (23)
+  - From rank #40 to #rank 60 on [Matt Goodrich's leaderboard](https://adventofcode.com/2020/leaderboard/private/view/411675)
+
+ ## Part 2:
+
+
+
+
 # Interesting links
 ## Utility from salt-die
 https://github.com/salt-die/Advent-of-Code/blob/master/2020/aoc_helper
