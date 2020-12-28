@@ -177,9 +177,11 @@ The side effect of this is that this became False if the function returned an in
   - Haven't opened the problem on day 21.
   - Hoping to get 19 and 20 finished by tomorrow (22) and get to 21 after tomorrow (23)
   - From rank #40 to #rank 60 on [Matt Goodrich's leaderboard](https://adventofcode.com/2020/leaderboard/private/view/411675)
+  - [2020/12/28] Got inspiration from https://github.com/UnicycleBloke/aoc2020/blob/main/day21/day21.py abut the right use of sets.
 
  ## Part 2:
-
+  - Not the cleanest way but good enough for today.
+  - Read extensively about the usage of argument splitting.
 
 
 
