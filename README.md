@@ -183,10 +183,27 @@ The side effect of this is that this became False if the function returned an in
   - Not the cleanest way but good enough for today.
   - Read extensively about the usage of argument splitting.
 
+# Day 22:
+## Part 1:
+  - First time usage of queue.Queue() - working as intended ;)
+
+## Part 2:
+
+# Day 23:
+## Part 1:
+ - No major issue
+
+## Part 2:
+ - Part 1 did not scale with larger numbers
+ - Changed the array structure to a chain of pointers (nostalgic flashback from CS classes in '96)
+ - Works sub 25 sec, which is OK
 
 
 # Interesting links
 ## Utility from salt-die
+https://github.com/norvig/pytudes/blob/master/ipynb/Advent-2020.ipynb
+ - nice resources around Python optimisation
+
 https://github.com/salt-die/Advent-of-Code/blob/master/2020/aoc_helper
  - automated download of input
  - automated submission
