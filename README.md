@@ -198,6 +198,16 @@ The side effect of this is that this became False if the function returned an in
  - Changed the array structure to a chain of pointers (nostalgic flashback from CS classes in '96)
  - Works sub 25 sec, which is OK
 
+# Day 24:
+## Part 1:
+ - First time using an hex grid, proud to have found a working solution without external inspiration.
+ - No major issue
+
+## Part 2:
+ - I failed to understand I needed to make the grid bigger (by 2 units in each direction) at every turn. I still think it was not clear in the problem description.
+ - Oooh, and we are the 19th of Feb, I missed the end of year deadline, procrastinated for 50 days now but I'm not giving up ;)
+
+
 
 # Interesting links
 ## Utility from salt-die
