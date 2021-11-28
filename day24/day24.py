@@ -1,5 +1,9 @@
 #!/usr/bin/env python
 
+BLACK = True
+WHITE = False
+
+
 def parse_line(line):
     directions = []
     while(line):
@@ -29,8 +33,6 @@ def get_position(directions):
 
 
 def part1(data):
-    BLACK = True
-    WHITE = False
 
     tiles = {}
     for line in data:
