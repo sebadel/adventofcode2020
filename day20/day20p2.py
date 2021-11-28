@@ -59,7 +59,6 @@ class SeaMonsterMatrix(object):
                     ''.join(self.data[y+2][x:x+m_size])
                 ])
                 if is_monster(zone, monster):
-                    print(zone, monster)
                     count += 1
         return count
 
@@ -82,7 +81,8 @@ class SeaMonsterMatrix(object):
 def part2(data):
     m = day20.part1(data, True)
     m2 = SeaMonsterMatrix(12, 8)
-    m2.LoadFromTiles([remove_tile_border(t.data) for t in ordered_tiles(m)])
+    m2.LoadFromTiles(
+        [remove_tile_border(t.data) for t in ordered_tiles(m)])
     nb_monsters = m2.DetectMonsters()
     HASHTAGS_IN_MONSTER = 15
     print('%d #\'s - %d monsters * %d = %d' % (
@@ -96,6 +96,7 @@ def part2(data):
     ]
     for op in OPERATIONS:
         getattr(m2, op)()
+        nb_monsters = m2.DetectMonsters()
         print('%d #\'s - %d monsters * %d = %d' % (
             m2.CountDash(), nb_monsters, HASHTAGS_IN_MONSTER,
             m2.CountDash() - (nb_monsters * 15)))

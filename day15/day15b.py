@@ -10,7 +10,7 @@ def part2(data, n):
     memory = Memory()
     for i, x in enumerate(data):
         memory.record(x, i+1)
-    turn = memory.next_turn
+    turn = len(data) + 1
     max_turns = n
     x = data[-1]
     start = datetime.datetime.now()
@@ -25,35 +25,47 @@ def part2(data, n):
         # Optional counter - probably slows down the process a little bit.
         if turn in [100000, 1000000, 10000000, 20000000, 30000000]:
             print ('Turn: %s - memory: %d - execution time: %s s' % (
-                turn, len(memory.data),
+                turn, memory.size,
                 (datetime.datetime.now() - start).total_seconds()))
     return x
 
 
 class Memory():
     def __init__(self):
-        self.data = {}
+        self.__divider = 100
+        self._data = {}
+
+    def get_data(self, x):
+        div, mod = self._break_down_x(x)
+        return self._data[div][mod]
 
     @property
-    def next_turn(self):
-        return len(self.data) + 1
+    def size(self):
+        _size = 0
+        for x in self._data:
+            for y in self._data[x]:
+                _size += len(self._data[x][y])
+        return _size
 
-    @property
-    def last(self):
-        return self.data[-1]
+    def _break_down_x(self, x):
+        return x // self.__divider , x % self.__divider
 
     def occurred_at_least_twice(self, x):
         try:
-            occurrences = self.data[x]
+            occurrences = self.get_data(x)
             return (occurrences[-2], occurrences[-1])
         except IndexError:
             return False
 
     def record(self, x, turn):
+        div, mod = self._break_down_x(x)
         try:
-            self.data[x].append(turn)
+            self._data[div][mod].append(turn)
         except KeyError:
-            self.data[x] = [turn]
+            try:
+                self._data[div][mod] = [turn]
+            except KeyError:
+                self._data[div] = {mod: [turn]}
 
 
 def main():
